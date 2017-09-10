@@ -1,0 +1,13 @@
+maskify = (cc) ->
+
+  return cc unless(cc.length > 4)
+
+  mask=""
+
+  last = cc.substring(cc.length - 4, cc.length) 
+
+  for i in [0 .. cc.length-5]
+
+    mask += "#"
+
+  return mask+last  
